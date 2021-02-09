@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.App {
+  margin: 12px;
+}
+
+/*--- Header.js Component START ---*/
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 35px;
+  min-height: 100%;
+}
+.header-logo {
+  font-family: "Heebo", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 35px;
+  color: #333333;
+}
+/*--- Header.js Component END ---*/
+
+/*--- PageLanding Component START---*/
+.page-landing {
+  margin-top: 48px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+}
+#title-blue {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #2d9cdb;
+  margin: 0px 28px;
+}
+#title-top {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #333333;
+  margin: 0px 38px 0px 28px;
+}
+#page-heading-img {
+  margin: 0px;
+}
+#page-heading-img img {
+  border-radius: 18px;
+  max-width: 100%;
+  max-height: 100%;
+}
+#title-bottom {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #333333;
+  margin: 22px 100px 0px 28px;
+}
+#title-description {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: #4f4f4f;
+  margin: 30px 28px 0px 28px;
+}
+#contact-us {
+  display: flex;
+  flex-flow: column nowrap;
+  width: calc(100% - 56px);
+  padding: 30px 28px 0px 28px;
+  margin: auto;
+}
+#contact-us-question {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 15px;
+  color: #828282;
+}
+#contact-us-email {
+  background: #f2f2f2;
+  height: 47px;
+  border-radius: 12px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+#contact-us-email input {
+  background-color: transparent;
+  border: 0px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #bdbdbd;
+  min-height: 100%;
+  margin-left: 20px;
+}
+#contact-us-email button {
+  background: #2d9cdb;
+  border-radius: 12px;
+  min-height: calc(100% - 8px);
+  padding: 0px 20px;
+  border: 0px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #f2f2f2;
+}
+/*--- PageLanding Component END---*/
+
+/*--- ServicesList Component START ---*/
+.servicesList {
+  margin-top: 100px;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
+.servicesListHeading {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #333333;
+  margin: 0px 58px 0px 28px;
+}
+.services {
+  display: flex;
+  flex-flow: column nowrap;
+}
+/*--- ServicesList Component END ---*/
+
+/*--- ServicesCard Component START ---*/
+.service-card {
+  margin-top: 40px;
+  padding: 0px 35px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+}
+.service-card:hover {
+  box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+  border-radius: 24px;
+}
+#service-card-logo {
+  width: 67px;
+  height: 67px;
+  border-radius: 16px;
+  margin-top: 50px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#service-card-logo span {
+  height: 27px;
+  width: 27px;
+}
+#service-card-name {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  color: #333333;
+  margin-top: 35px;
+}
+#service-card-description {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4f4f4f;
+  margin-top: 24px;
+  width: 273px;
+  height: 96px;
+}
+.service-card button {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #828282;
+  padding: 9px 12px;
+  background: #e0e0e0;
+  border-radius: 12px;
+  border: 0px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.service-card button:hover {
+  cursor: pointer;
+  background: #2d9cdb;
+  color: #ffffff;
+}
+/*--- ServicesCard Component END ---*/
