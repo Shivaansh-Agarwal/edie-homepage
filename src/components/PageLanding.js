@@ -1,4 +1,5 @@
 import React from "react";
+import EmailBox from "./EmailBox";
 import imgTeamMeeting from "../assets/heroImage.jpg";
 
 const PageLanding = () => {
@@ -15,12 +16,8 @@ const PageLanding = () => {
         outperform your toughest competition and help you achieve your strategic
         goals in short period of time.
       </div>
-      <div id="contact-us">
-        <div id="contact-us-question">Want us to contact you?</div>
-        <div id="contact-us-email">
-          <input type="email" name="Email" id="email" placeholder="Email" />
-          <button>Join</button>
-        </div>
+      <div className="title-email-wrapper">
+        <EmailBox />
       </div>
     </div>
   );
